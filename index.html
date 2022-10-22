@@ -401,7 +401,8 @@
             <li class="border-logo">
               <a href="" class="link-logo">
                 <svg class="icon-logo">
-                  <use href="./img/sprite.svg#icon-cube-logo"></use></svg>
+                  <use href="./img/sprite.svg#icon-cube-logo"></use>
+                </svg>
               </a>
             </li>
           </ul>
@@ -472,31 +473,137 @@
             </li>
           </ul>
         </div>
+
+        <!-- Footer form -->
+
+        <div class="subscription-footer">
+          <p class="form-title">Підпишіться на розсилку</p>
+
+          <form action="" class="footer-form">
+            <div class="footer-element">
+              <label for="subscription"></label>
+              <input 
+              type="subscription"
+              class=""
+              id="subscription"
+              name="subscription"
+              pattern="^[a-z0-9](\.?[a-z0-9]){5,}@g(oogle)?mail\.com$"
+              placeholder="E-mail">
+            </div>
+
+            <button type="submit" class="footer-btn">Підписатися
+              <span class="wrap-icon">
+                <svg class="send-icon">
+                  <use href="./img/sprite.svg#icon-icon-send"></use>
+                </svg>
+              </span>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
 
     <!-- Modal -->
 
-    <div class="backdrop " data-modal>
+    <div class="backdrop" data-modal>
       <div class="modal">
         <button type="button" class="close-button" data-modal-close>
           <svg class="icon-close">
             <use href="./img/sprite.svg#icon-close-button"></use>
           </svg>
         </button>
+
+        <!-- Form -->
+
         <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
         <form action="" class="modal-form">
           <div class="form-element">
-            <label for="name">Введіть ім'я</label>
-            <input type="text" id="name"/>
+            <label for="name">Iм'я <span>*</span></label>
+            <div class="input-wrap">
+              <input
+                type="text"
+                class="form-input"
+                id="name"
+                name="name"
+                required
+              />
+              <svg class="form-icon">
+                <use href="./img/sprite.svg#icon-person-form"></use>
+              </svg>
+            </div>
           </div>
 
           <div class="form-element">
-            <label for="password">Введіть пароль</label>
-            <input type="password" id="password"/>
-          </div> 
+            <label for="tel">Телефон</label>
+            <div class="input-wrap">
+              <input
+                type="tel"
+                class="form-input"
+                id="tel"
+                name="tel"
+                pattern="[\+]\d{2}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
+                minlength="13"
+                maxlength="13"
+                placeholder="+380-96-111-11-11"
+              />
+              <svg class="form-icon">
+                <use href="./img/sprite.svg#icon-phone-form"></use>
+              </svg>
+            </div>
+          </div>
 
-          <button type="submit">Віправити</button>
+          <div class="form-element">
+            <label for="email">Пошта</label>
+            <div class="input-wrap">
+              <input
+                class="form-input"
+                type="email"
+                id="email"
+                name="email"
+                pattern="^[a-z0-9](\.?[a-z0-9]){5,}@g(oogle)?mail\.com$"
+                placeholder="your.email@gmail.com"
+              />
+              <svg class="form-icon">
+                <use href="./img/sprite.svg#icon-email-form"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="form-element">
+            <label for="comment"
+              >Коментар
+              <textarea
+                class="comment"
+                name="comment"
+                id="comment"
+                rows="6"
+                placeholder="Введіть текст"
+              ></textarea>
+            </label>
+          </div>
+
+          <div class="accept">
+            <input
+              type="checkbox"
+              id="accept"
+              name="accept"
+              class="visually-hidden"
+              required
+            />
+
+            
+            <label for="accept" class="check-mark"
+              >
+              <div class="checkbox">
+                <svg class="vector-icon">
+                  <use href="./img/sprite.svg#icon-vector"></use>
+                </svg>
+              </div>
+              Погоджуюся з розсилкою та приймаю <a href="#" class="form-link">Умови договору</a> </label
+            >
+          </div>
+
+          <button type="submit" class="btn">Віправити</button>
         </form>
       </div>
     </div>
