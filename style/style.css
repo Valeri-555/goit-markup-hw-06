@@ -866,12 +866,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-button:hover,
 .close-button:focus {
   fill: var(--accent-color);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-close {
@@ -917,6 +917,7 @@ margin-bottom: 12px;
   padding-left: 45px;
   outline: none;
   width: 100%;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-element input:focus {
@@ -993,6 +994,7 @@ margin-bottom: 12px;
   display: flex;
   align-items: center;
   margin-right: 7px;
+  
 }
 
 .checkbox svg {
@@ -1003,11 +1005,12 @@ margin-bottom: 12px;
   background: var(--accent-color);
   border: 2px solid var(--accent-color);
   justify-content: center;
-
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .accept input:checked+label .checkbox svg {
   display: block;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .vector-icon {
