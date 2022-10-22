@@ -309,6 +309,31 @@
           </li>
         </ul>
       </div>
+      <!-- Footer form -->
+
+      <div class="subscription-footer">
+        <p class="form-title">Підпишіться на розсилку</p>
+
+        <form action="" class="footer-form">
+          <div class="footer-element">
+            <label for="subscription"></label>
+            <input 
+            type="subscription"
+            class=""
+            id="subscription"
+            name="subscription"
+            pattern="^[a-z0-9](\.?[a-z0-9]){5,}@g(oogle)?mail\.com$"
+            placeholder="E-mail">
+          </div>
+
+          <button type="submit" class="footer-btn">Підписатися
+            <span class="wrap-icon">
+              <svg class="send-icon">
+                <use href="./img/sprite.svg#icon-icon-send"></use>
+              </svg>
+            </span>
+          </button>
+        </form>
     </div>
     </footer>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
