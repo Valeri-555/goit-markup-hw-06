@@ -627,7 +627,7 @@ body {
 /* Footer form */
 
 .subscription-footer {
-  margin-left: 95px;
+  margin-left: 93px;
 }
 
 .form-title {
@@ -673,7 +673,7 @@ body {
 
 
 .footer-btn {
-  padding: 10px 52px;
+  padding: 10px 28px;
   background-color: var(--accent-color);
   color: white;
   cursor: pointer;
@@ -941,6 +941,8 @@ margin-bottom: 12px;
   outline: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
   width: 448px;
+  height: 120px;
+  
 }
 
 .comment:focus {
@@ -1026,12 +1028,14 @@ margin-bottom: 12px;
   line-height: 24px;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
+  justify-content: center;
+  margin-bottom: 30px;
 }
 
 .check-mark {
   display: flex;
   align-items: center;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
 }
 
 .form-link {
